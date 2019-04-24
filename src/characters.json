@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "image":
+          "https://vignette.wikia.nocookie.net/southpark/images/c/c4/Eric-cartman.png/revision/latest/scale-to-width-down/150?cb=20180718082504"
+      },
+      {
+        "id": 2,
+        "image":
+          "https://vignette.wikia.nocookie.net/southpark/images/6/6f/KennyMcCormick.png/revision/latest/scale-to-width-down/111?cb=20160409020502"
+      },
+      {
+        "id": 3,
+        "image":
+          "https://vignette.wikia.nocookie.net/southpark/images/9/95/Kyle-broflovski.png/revision/latest/scale-to-width-down/121?cb=20190411033301"
+      },
+      {
+        "id": 4,
+        "image":
+          "https://vignette.wikia.nocookie.net/southpark/images/c/c6/Stan-marsh-0.png/revision/latest/scale-to-width-down/96?cb=20170721155858"
+      },
+      {
+        "id": 5,
+        "image":
+          "https://vignette.wikia.nocookie.net/southpark/images/3/38/JeromeChef.png/revision/latest/scale-to-width-down/310?cb=20160402120214"
+      },
+      {
+        "id": 6,
+        "image":
+          "https://vignette.wikia.nocookie.net/southpark/images/0/06/ButtersStotch.png/revision/latest/scale-to-width-down/120?cb=20190411032405"
+      }
+]

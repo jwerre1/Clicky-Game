@@ -1,24 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
+import Counter from "./components/Counter";
+import CharCard from "./components/CharCard";
 import './App.css';
+
+import characters from "./characters.json";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Counter />
+
+      <div className="container">
+        <CharCard
+          image={characters[0].image}
+        />
+        <CharCard
+          image={characters[1].image}
+        />
+        <CharCard
+          image={characters[2].image}
+        />
+        <CharCard
+          image={characters[3].image}
+        />
+        <CharCard
+          image={characters[4].image}
+        />
+        <CharCard
+          image={characters[5].image}
+        />
+
+      </div>
     </div>
   );
 }
