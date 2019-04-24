@@ -11,18 +11,51 @@ class App extends Component {
   state = {
     characters,
     count: 0,
+    clicked: [],
     topscore: 0,
 
   }
 
-  handleIncrement = () => {
-    this.setState({ count: this.state.count + 1 });
-
+  handleIncrement = (id) => {
     function func(a, b) {
       return 0.5 - Math.random();
     }
     const characters = this.state.characters.sort(func);
     this.setState({characters});
+
+    let clicked = this.state.clicked;
+
+    if (clicked.includes(id) === false) {
+      clicked.push(id);
+      this.setState({ count: this.state.count + 1 });
+
+      if (this.state.count + 1 > this.state.topscore) {
+        this.setState({ topscore: this.state.count + 1});
+      }
+      console.log(clicked);
+
+    }
+
+    else {
+      console.log("game over");
+      this.setState({clicked: []});
+      this.setState({ count: 0 });
+      console.log(clicked);
+    }
+
+    if (clicked.length === 6) {
+      console.log("You Won!!!!");
+      this.setState({ count: 0 });
+    }
+
+
+
+    // else {
+    //   console.log("Game Over");
+    //   this.setState({ count: 0 });
+    // }
+
+   
   };
 
   // shuffle = () => {
@@ -45,7 +78,8 @@ class App extends Component {
             Click Counter!
         </div>
           <div className="card-body">
-            <p className="card-text">Click Count: {this.state.count}</p>
+            <p className="card-text">Current Score: {this.state.count}</p>
+            <p className="card-text">High Score: {this.state.topscore}</p>
             {/* <button className="btn btn-primary" onClick={this.handleIncrement}>
               Increment
           </button> */}
