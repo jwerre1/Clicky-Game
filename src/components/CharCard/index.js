@@ -2,7 +2,7 @@ import React from "react";
 
 const styles = {
     width: {
-        width: "125px"
+        width: "200px"
     }
 };
 
