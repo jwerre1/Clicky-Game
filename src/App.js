@@ -10,12 +10,32 @@ class App extends Component {
 
   state = {
     characters,
-    count: 0
+    count: 0,
+    topscore: 0,
+
   }
 
   handleIncrement = () => {
     this.setState({ count: this.state.count + 1 });
+
+    function func(a, b) {
+      return 0.5 - Math.random();
+    }
+    const characters = this.state.characters.sort(func);
+    this.setState({characters});
   };
+
+  // shuffle = () => {
+  //   function func(a, b) {
+  //     return 0.5 - Math.random();
+  //   }
+  //   const characters = this.state.characters.sort(func);
+  //   this.setState({characters});
+  // };
+
+  // beenClicked = () => {
+  //   this.setState({ count: this.state.count + 1 });
+  // };
 
   render() {
     return (
@@ -38,7 +58,10 @@ class App extends Component {
               key={character.id}
               id={character.id}
               image={character.image}
+              clicked={character.clicked}
               handleIncrement={this.handleIncrement}
+              // beenClicked={this.beenClicked}
+              // shuffle={this.shuffle}
             />
           ))}
         </Wrapper>
