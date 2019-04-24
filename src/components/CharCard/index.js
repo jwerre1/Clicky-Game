@@ -1,5 +1,4 @@
 import React from "react";
-import Counter from "../Counter";
 
 const styles = {
     width: {
@@ -10,7 +9,9 @@ const styles = {
 function CharCard(props) {
     return (
         <div className="card" style={styles.width}>
-            <img src={props.image} className="width card-img-top" alt="..." onClick={Counter.handleIncrement}/>
+
+            <span onClick={() => props.handleIncrement()}><img src={props.image} className="width card-img-top" alt="..." /></span>
+  
         </div>
     );
 }
