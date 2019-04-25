@@ -16,7 +16,8 @@ class App extends Component {
     count: 0,
     clicked: [],
     topscore: 0,
-    message: "Click an image to begin!"
+    message: "Click an image to begin!",
+    wrapperClass: "wrapper"
   }
 
   handleIncrement = (id) => {
@@ -31,6 +32,7 @@ class App extends Component {
     if (clicked.includes(id) === false) {
       clicked.push(id);
       this.setState({ count: this.state.count + 1 });
+      this.setState({ wrapperClass: "wrapper" });
       this.setState({ message: "You guessed correctly!" });
 
       if (this.state.count + 1 > this.state.topscore) {
@@ -41,12 +43,14 @@ class App extends Component {
     else {
       this.setState({ clicked: [] });
       this.setState({ count: 0 });
+      this.setState({ wrapperClass: "wrapper shake" });
       this.setState({ message: "Game over. Click an image to start again." });
     }
 
     if (clicked.length === 12) {
       this.setState({ count: 0 });
       this.setState({ clicked: [] });
+      this.setState({ wrapperClass: "wrapper" });
       this.setState({ message: "You won! Click an image to play again!" });
 
     }
@@ -62,7 +66,9 @@ class App extends Component {
         />
 
         <Header />
-        <Wrapper>
+        <Wrapper
+        className={this.state.wrapperClass}
+        >
           <div className="card-columns">
           {this.state.characters.map(character => (
             <CharCard
