@@ -1,0 +1,17 @@
+.header {
+    height: 200px;
+    text-align: center;
+    padding: 50px;
+    background: url(dark-honeycomb.png) no-repeat center center fixed;
+    background-color: lightslategray;
+    background-size: cover; 
+    color: white;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+h2 {
+    font-weight: bold;
+}

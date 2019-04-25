@@ -2,17 +2,17 @@ import React from "react";
 import "./style.css";
 
 
+
 function Navbar(props) {
     return (
-        <nav className="navbar sticky-top navbar-light bg-primary">
-            <span className="nav-text brand text-center">
+        <nav className="navbar sticky-top navbar-light py-3">
+            <span className="nav-text brand">
                 Clicky Game
                 </span>
-            <span className={props.message === ("You guessed correctly!" || "You won! Click an image to play again!") ? "nav-text text-center text-success" : "nav-text text-center"}>
-            
+            <span className={props.message === ("You guessed correctly!" || "You won! Click an image to play again!") ? "nav-text font-italic text-success nav-message" : (props.message === "Game over. Click an image to start again." ? "nav-text redText nav-message" : "nav-text nav-message")}>
                 {props.message}
             </span>
-            <span className="nav-text text-center">
+            <span className="nav-text">
                 Score: {props.counter} | High Score: {props.topscore}
             </span>
         </nav>

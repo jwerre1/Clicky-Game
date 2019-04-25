@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import CharCard from "./components/CharCard";
 import Wrapper from "./components/Wrapper";
 import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import './App.css';
 
 import characters from "./characters.json";
@@ -34,21 +36,17 @@ class App extends Component {
       if (this.state.count + 1 > this.state.topscore) {
         this.setState({ topscore: this.state.count + 1 });
       }
-      console.log(clicked);
-
     }
 
     else {
-      console.log("game over");
       this.setState({ clicked: [] });
       this.setState({ count: 0 });
-      this.setState({ message: "You guessed incorrectly!" });
-      console.log(clicked);
+      this.setState({ message: "Game over. Click an image to start again." });
     }
 
-    if (clicked.length === 6) {
-      console.log("You Won!!!!");
+    if (clicked.length === 12) {
       this.setState({ count: 0 });
+      this.setState({ clicked: [] });
       this.setState({ message: "You won! Click an image to play again!" });
 
     }
@@ -63,6 +61,7 @@ class App extends Component {
         message={this.state.message}
         />
 
+        <Header />
         <Wrapper>
           <div className="card-columns">
           {this.state.characters.map(character => (
@@ -76,6 +75,8 @@ class App extends Component {
           ))}
           </div>
         </Wrapper>
+
+        <Footer />
       </div>
     );
   }

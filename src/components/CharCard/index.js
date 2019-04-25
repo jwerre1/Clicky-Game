@@ -1,8 +1,9 @@
 import React from "react";
+import "./style.css";
 
 const styles = {
     width: {
-        width: "200px"
+        width: "140px"
     }
 };
 

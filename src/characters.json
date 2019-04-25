@@ -1,38 +1,62 @@
 [
     {
         "id": 1,
-        "clicked": false,
         "image":
-          "https://vignette.wikia.nocookie.net/southpark/images/c/c4/Eric-cartman.png/revision/latest/scale-to-width-down/150?cb=20180718082504"
+          "https://vignette.wikia.nocookie.net/southpark/images/c/c4/Eric-cartman.png/revision/latest/"
       },
       {
         "id": 2,
-        "clicked": false,
         "image":
-          "https://vignette.wikia.nocookie.net/southpark/images/6/6f/KennyMcCormick.png/revision/latest/scale-to-width-down/111?cb=20160409020502"
+          "https://vignette.wikia.nocookie.net/southpark/images/6/6f/KennyMcCormick.png/revision/latest/"
       },
       {
         "id": 3,
-        "clicked": false,
         "image":
-          "https://vignette.wikia.nocookie.net/southpark/images/9/95/Kyle-broflovski.png/revision/latest/scale-to-width-down/121?cb=20190411033301"
+          "https://vignette.wikia.nocookie.net/southpark/images/9/95/Kyle-broflovski.png/revision/latest/"
       },
       {
         "id": 4,
-        "clicked": false,
         "image":
-          "https://vignette.wikia.nocookie.net/southpark/images/c/c6/Stan-marsh-0.png/revision/latest/scale-to-width-down/96?cb=20170721155858"
+          "https://vignette.wikia.nocookie.net/southpark/images/c/c6/Stan-marsh-0.png/revision/latest/"
       },
       {
         "id": 5,
-        "clicked": false,
         "image":
-          "https://vignette.wikia.nocookie.net/southpark/images/3/38/JeromeChef.png/revision/latest/scale-to-width-down/310?cb=20160402120214"
+          "https://vignette.wikia.nocookie.net/southpark/images/3/38/JeromeChef.png/revision/latest/"
       },
       {
         "id": 6,
-        "clicked": false,
         "image":
-          "https://vignette.wikia.nocookie.net/southpark/images/0/06/ButtersStotch.png/revision/latest/scale-to-width-down/120?cb=20190411032405"
+          "https://vignette.wikia.nocookie.net/southpark/images/0/06/ButtersStotch.png/revision/latest/"
+      },
+      {
+        "id": 7,
+        "image":
+          "https://vignette.wikia.nocookie.net/southpark/images/a/a1/ScottMalkinson_2.png/revision/latest/"
+      },
+      {
+        "id": 8,
+        "image":
+          "https://vignette.wikia.nocookie.net/southpark/images/0/07/Towelie-0.png/revision/latest/"
+      },
+      {
+        "id": 9,
+        "image":
+          "https://vignette.wikia.nocookie.net/southpark/images/d/d0/Sexual-harassment-panda.png/revision/latest/"
+      },
+      {
+        "id": 10,
+        "image":
+          "https://vignette.wikia.nocookie.net/southpark/images/a/a3/Mitch-conner.png/revision/latest/"
+      },
+      {
+        "id": 11,
+        "image":
+          "https://vignette.wikia.nocookie.net/southpark/images/d/df/Scott_tenorman_201.png/revision/latest/"
+      },
+      {
+        "id": 12,
+        "image":
+          "https://vignette.wikia.nocookie.net/southpark/images/c/c7/Mint-berry-crunch.png/revision/latest/"
       }
 ]

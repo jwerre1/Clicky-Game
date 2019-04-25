@@ -1,8 +1,18 @@
 .navbar {
     color: white;
-    font-size: 150%;
+    font-size: 140%;
+    background: purple;
+    font-weight: bold;
 }
 
 .brand {
     font-weight: bold;
+}
+
+.redText {
+    color: rgb(255, 86, 86);
+}
+
+.nav-message {
+    font-size: 160%;
 }
